@@ -1,0 +1,9 @@
+order_id,customer,product_id,quantity
+1,Rahul,101,1
+2,Sneha,102,2
+3,Arjun,103,1
+4,Rahul,102,3
+5,Priya,104,1
+6,Sneha,101,1
+7,Karan,103,2
+8,Rahul,104,1

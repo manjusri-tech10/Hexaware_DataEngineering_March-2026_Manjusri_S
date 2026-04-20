@@ -1,0 +1,8 @@
+{
+"products": [
+{"product_id": 101, "name": "Laptop", "price": 75000},
+{"product_id": 102, "name": "Mouse", "price": 500},
+{"product_id": 103, "name": "Keyboard", "price": 1500},
+{"product_id": 104, "name": "Monitor", "price": 12000}
+]
+}
