@@ -1,0 +1,10 @@
+{
+"students": [
+{"name": "Rahul", "marks": 85, "course": "Python"},
+{"name": "Sneha", "marks": 92, "course": "Data Engineering"},
+
+{"name": "Arjun", "marks": 78, "course": "Python"},
+{"name": "Priya", "marks": 88, "course": "AI"},
+{"name": "Karan", "marks": 70, "course": "Python"}
+]
+}
