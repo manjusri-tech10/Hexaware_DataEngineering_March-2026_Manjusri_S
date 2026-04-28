@@ -1,0 +1,6 @@
+
+As a solution architect from a server company, I was approached by TaxSmile to manage their infrastructure for the April–August peak season. Initially, their 2 on-prem servers were not enough, so after load and stress testing, I proposed adding 3 more servers.
+
+At first, the plan required network engineers to be available 24/7, so I designed a model with 4 teams (3 shifts + 1 backup) to ensure continuous operations. After approvals from Directors, CTO, and COO, the procurement team placed the order from Germany (3 weeks), and we planned server setup, power supply, and infrastructure.
+
+However, I then recommended moving to Azure Cloud, which changed everything. With 2 VMs and elastic scaling, the system could increase or decrease servers simply by changing a number in a text box. This automation reduced the need for continuous 24/7 network engineer involvement, making operations more efficient, scalable, and cost-effective during peak demand.
