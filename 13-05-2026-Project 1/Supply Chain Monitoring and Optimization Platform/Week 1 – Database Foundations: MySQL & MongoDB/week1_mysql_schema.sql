@@ -1,6 +1,8 @@
+-- 1. Database Creation
 CREATE DATABASE supply_chain;
 USE supply_chain;
 
+-- 2. Create Tables
 CREATE TABLE suppliers (
     supplier_id INT PRIMARY KEY AUTO_INCREMENT,
     supplier_name VARCHAR(100) NOT NULL,
@@ -18,6 +20,8 @@ CREATE TABLE orders (
     status VARCHAR(50),
     FOREIGN KEY (product_id) REFERENCES inventory(product_id)
 );
+
+-- 3. Insert Sample Data
 
 INSERT INTO suppliers (supplier_name, contact_email, phone, location)
 VALUES
@@ -39,6 +43,7 @@ VALUES
 (3, 7, '2026-05-04', '2026-05-08', 'Delivered'),
 (4, 2, '2026-05-06', '2026-05-15', 'Pending');
 
+-- 4. CRUD Operations
 INSERT INTO suppliers (supplier_name, contact_email, phone, location)
 VALUES ('Tech World', 'tech@gmail.com', '9999999999', 'Hyderabad');
 
@@ -61,7 +66,7 @@ WHERE product_id = 1;
 DELETE FROM orders
 WHERE order_id = 4;
 
--- Stored Procedure (Auto Reorder Check)
+-- 5. Stored Procedure (Auto Reorder Check)
 
 -- Checks products below reorder level
 
