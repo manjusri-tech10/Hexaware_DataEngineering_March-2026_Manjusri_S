@@ -1,0 +1,5 @@
+order_id,supplier_id,item,quantity,delivery_date,status,delay_days,is_delayed
+1,S1,Laptop,10,2024-01-01,Delivered,863,1
+2,S2,Mouse,50,2024-01-15,Pending,849,1
+4,S3,Monitor,5,2023-12-20,Delivered,875,1
+5,S2,Webcam,20,2024-02-01,Unknown,832,1
