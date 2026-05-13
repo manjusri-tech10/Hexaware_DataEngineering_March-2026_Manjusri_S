@@ -1,0 +1,11 @@
+order_id,supplier_id,item,quantity,delivery_date,status
+1,S1,Laptop,10,2024-01-01,Delivered
+2,S2,Mouse,50,2024-01-15,Pending
+3,S1,Keyboard,30,2024-01-10,Delayed
+4,S3,Monitor,5,2023-12-20,Delivered
+5,S2,Webcam,20,2024-02-01,Pending
+6,S1,Headphones,15,2023-11-15,Delayed
+7,S3,Charger,40,2023-12-01,Delayed
+8,S2,USB Hub,25,2024-01-20,Pending
+9,S1,SSD,8,2023-10-10,Delayed
+10,S3,Printer,3,2024-02-10,Pending
