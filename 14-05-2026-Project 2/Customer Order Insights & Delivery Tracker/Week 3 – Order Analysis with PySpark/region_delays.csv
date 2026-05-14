@@ -1,0 +1,5 @@
+region,delayed_orders,total_orders
+North,2,3
+South,1,2
+East,0,2
+West,0,1
