@@ -1,8 +1,6 @@
--- Create Database
 CREATE DATABASE order_insights;
 USE order_insights;
 
--- Customers Table
 CREATE TABLE customers (
     customer_id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100),
@@ -11,7 +9,6 @@ CREATE TABLE customers (
     region VARCHAR(50)
 );
 
--- Orders Table
 CREATE TABLE orders (
     order_id INT AUTO_INCREMENT PRIMARY KEY,
     customer_id INT,
@@ -21,7 +18,6 @@ CREATE TABLE orders (
     FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
 );
 
--- Delivery Status Table
 CREATE TABLE delivery_status (
     status_id INT AUTO_INCREMENT PRIMARY KEY,
     order_id INT,
@@ -31,7 +27,6 @@ CREATE TABLE delivery_status (
     FOREIGN KEY (order_id) REFERENCES orders(order_id)
 );
 
--- INSERT (Create)
 INSERT INTO customers (name, email, phone, region) VALUES
 ('Alice Johnson', 'alice@email.com', '9876543210', 'North'),
 ('Bob Smith', 'bob@email.com', '9123456780', 'South'),
@@ -47,19 +42,15 @@ INSERT INTO delivery_status (order_id, status, actual_delivery, remarks) VALUES
 (2, 'Delivered', '2024-01-09', 'On time'),
 (3, 'Delayed', '2024-01-15', 'Logistics problem');
 
--- READ
 SELECT * FROM customers;
 SELECT * FROM orders;
 SELECT * FROM delivery_status;
 
--- UPDATE
 UPDATE delivery_status SET status = 'Delivered', actual_delivery = '2024-01-14' WHERE order_id = 1;
 
--- DELETE
 DELETE FROM delivery_status WHERE order_id = 3;
 
 DELETE FROM orders WHERE order_id = 3;
--- Stored Procedure: Fetch all delayed deliveries for a customer
 DELIMITER $$
 CREATE PROCEDURE GetDelayedDeliveries(IN cust_id INT)
 BEGIN
@@ -72,5 +63,4 @@ BEGIN
 END $$
 DELIMITER ;
 
--- Call Stored Procedure
 CALL GetDelayedDeliveries(1);
