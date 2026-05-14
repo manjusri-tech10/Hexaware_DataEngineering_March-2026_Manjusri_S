@@ -1,0 +1,8 @@
+order_id,customer_id,product_name,order_date,delivery_date,region,issue
+1,101,Laptop,2024-01-01,2024-01-12,North,Weather
+2,102,Phone,2024-01-03,2024-01-09,South,
+3,103,Tablet,2024-01-05,2024-01-15,East,Logistics
+4,101,Monitor,2024-01-07,,North,Lost
+5,104,Keyboard,2024-01-08,2024-01-20,West,Logistics
+6,102,Mouse,2024-01-10,2024-01-11,South,
+7,105,Headphones,2024-01-12,2024-01-25,North,Weather
